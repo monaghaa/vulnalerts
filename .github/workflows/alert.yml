@@ -2,11 +2,11 @@ name: VulnAlerts
 
 on: 
   schedule:
-    - cron:  '53 * * * *'
+    - cron:  '02 * * * *'
 
 jobs:
   alert:
-    runs-on: rocky
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: monaghaa/vulnalerts@master
