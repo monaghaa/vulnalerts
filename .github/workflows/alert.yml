@@ -1,9 +1,9 @@
 name: VulnAlerts
 
-on: 
-  schedule:
-    - cron:  '08 * * * *'
-
+on:
+  push:
+    branches:
+      - master
 jobs:
   alert:
     runs-on: ubuntu-latest
